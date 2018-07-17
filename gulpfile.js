@@ -10,6 +10,7 @@ gulp.task('task:clean', () => {
 })
 
 gulp.task('task:pug', () => {
+    // return gulp.src('./src/pug/template/*.pug')
     return gulp.src('./src/pug/template/*.pug')
         .pipe(plumber())
         .pipe(pug({
@@ -17,21 +18,26 @@ gulp.task('task:pug', () => {
             compileDebug: true
         }))
         .pipe(gulp.dest('./src/html'))
-        .pipe(browserSync.stream({match: 'pug/**/*.pug'}));
+
+        .pipe(browserSync.reload({stream: true}))
 })
 
-gulp.task('task:pug-watch', ['task:pug'], (done) => {
-    browserSync.reload();
-    done();
-});
 
+gulp.task('reloadTeste', ['task:pug'], function (done) {
+    setTimeout(() => {
+        browserSync.reload();
+    done();
+    }, 500)
+    
+        
+});
 
 // Static server
 gulp.task('task:server', () => {
     browserSync.init({
         server: {
-            baseDir: "./src/html/"
+            baseDir: "./"
         }
     });
-    gulp.watch("./src/pug/template/*.pug", ['task:pug-watch']);
+    gulp.watch("./src/pug/template/*.pug", ['reloadTeste']);
 });
