@@ -21,11 +21,16 @@ gulp.task('task:pug', () => {
     .pipe(browserSync.reload({stream: true}))
 })
 
-gulp.task('task:img', () => {
+gulp.task('task:copyimg', () => {
   return gulp.src('./src/img/*.jpg')
-    .pipe(imagemin())
     .pipe(gulp.dest('./email/'))
 })
+
+gulp.task('task:buildimg', () => {
+    return gulp.src('./src/img/*.jpg')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./email/'))
+  })
 
 // Static server
 gulp.task('task:server', () => {
@@ -35,11 +40,11 @@ gulp.task('task:server', () => {
       }
   });
   gulp.watch("src/pug/template/*.pug", ['task:pug']);
-  gulp.watch("src/img/*.jpg", ['task:img']);
+  gulp.watch("src/img/*.jpg", ['task:copyimg']);
   gulp.watch("email/*.html").on("change", browserSync.reload);
 });
 
 gulp.task("task:build", ['task:clean'], () => {
-  gulp.start('task:pug', 'task:img', 'task:server')
+  gulp.start('task:pug', 'task:buildimg', 'task:server')
 })
 
