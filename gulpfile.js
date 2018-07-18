@@ -15,7 +15,11 @@ gulp.task('task:pug', () => {
     .pipe(plumber())
     .pipe(pug({
         pretty: '\t',
-        compileDebug: true
+        compileDebug: true,
+        data: (file) => {
+          console.log("ola");
+
+        }
     }))
     .pipe(gulp.dest('./email/'))
     .pipe(browserSync.reload({stream: true}))
