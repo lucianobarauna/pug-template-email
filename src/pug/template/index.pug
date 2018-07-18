@@ -1,6 +1,20 @@
+//- - var itens = [
+//-   {
+//-     item: 1
+//-   },
+//-   {
+//-     item: 2
+//-   },
+//-   {
+//-     item: 3
+//-   }
+//- ]
 doctype html
 html
   head
   body
     p teste de cada
     img(src="teste.jpg")
+    ul
+      each val, index in [{id:'one'}, {id:'two'}, {id:'three'}]
+        li= index + ': ' + val[index][id]
