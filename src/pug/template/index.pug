@@ -1,20 +1,12 @@
-//- - var itens = [
-//-   {
-//-     item: 1
-//-   },
-//-   {
-//-     item: 2
-//-   },
-//-   {
-//-     item: 3
-//-   }
-//- ]
 doctype html
 html
   head
   body
-    p teste de cada
-    img(src="teste.jpg")
-    ul
-      each val, index in [{id:'one'}, {id:'two'}, {id:'three'}]
-        li= index + ': ' + val[index][id]
+    - var objNews = locals
+    p texto qualquer aqui
+
+    each val, index in locals
+      p= val
+
+    img(src="teste.jpg", alt="")
+
