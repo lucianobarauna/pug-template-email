@@ -1,0 +1,17 @@
+{
+  "dataNews": [
+    {
+      "tipoLayout": "coluna",
+      "link": "http://www.google.com.br",
+      "srcImg": "teste.jpg",
+      "altImg": "Essa é uma imagem com teste"
+    },
+    {
+      "tipoLayout": "coluna",
+      "link": "http://www.google.com.br",
+      "srcImg": "teste.jpg",
+      "altImg": "Essa é uma imagem com teste"
+    }
+  ]
+}
+

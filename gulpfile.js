@@ -1,5 +1,6 @@
 const gulp = require('gulp')
 const pug = require('gulp-pug')
+const gulpData = require('gulp-data')
 const clean = require('gulp-clean')
 const plumber = require('gulp-plumber')
 const browserSync = require('browser-sync')
@@ -16,12 +17,12 @@ gulp.task('task:clean', () => {
 gulp.task('task:pug', () => {
   return gulp.src('./src/pug/template/*.pug')
     .pipe(plumber())
+    .pipe(gulpData(() => {
+      return JSON.parse(fs.readFileSync('./src/data/news.json'))
+    }))
     .pipe(pug({
         pretty: '\t',
-        compileDebug: true,
-        locals(file){
-          return JSON.parse(fs.readFileSync('./data/dataNews.json'))
-        }
+        compileDebug: true
     }))
     .pipe(gulp.dest('./email/'))
     .pipe(browserSync.reload({stream: true}))

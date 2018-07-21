@@ -2,11 +2,16 @@ doctype html
 html
   head
   body
-    - var objNews = locals
-    p texto qualquer aqui
+    p.
+      texto qualquer aqui dasa dadas
+    each prop, index in dataNews
+      if #{prop.tipoLayout} === "coluna"
+        p.
+          isso é uma #{prop.tipoLayout}
+        img(src=prop.srcImg, alt=prop.altImg)
+      else
+        p.
+          isso é uma #{prop.tipoLayout}
+        img(src=prop.srcImg, alt=prop.altImg)
 
-    each val, index in locals
-      p= val
-
-    img(src="teste.jpg", alt="")
 
