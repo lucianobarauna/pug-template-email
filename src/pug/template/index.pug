@@ -1,17 +1,16 @@
+include ../mixin/mixins.pug
 doctype html
 html
-  head
+  include ../includes/head.pug
   body
-    p.
-      texto qualquer aqui
+    // Head destaque
+    include ../includes/head-news.pug
     each prop, index in dataNews
       if prop.tipoLayout === "coluna"
-        p.
-          isso é uma #{prop.tipoLayout}
-        img(src=prop.srcImg, alt=prop.altImg)
+        +m-lycolum(prop.columns, prop.spaceImg)
       else
-        p.
-          isso é uma #{prop.tipoLayout}
-        img(src=prop.srcImg, alt=prop.altImg)
+        +m-lyrow(prop.linkProd, prop.srcImg, prop.altImg, prop.spaceImg)
+    // Footer
+    include ../includes/footer.pug
 
 
