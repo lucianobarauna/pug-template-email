@@ -3,14 +3,14 @@
     {
       "tipoLayout": "coluna",
       "link": "http://www.google.com.br",
-      "srcImg": "teste.jpg",
-      "altImg": "Essa é uma imagem com teste"
+      "srcImg": "teste2.jpg",
+      "altImg": "Essa é uma imagem de coluna"
     },
     {
-      "tipoLayout": "coluna",
+      "tipoLayout": "linha",
       "link": "http://www.google.com.br",
       "srcImg": "teste.jpg",
-      "altImg": "Essa é uma imagem com teste"
+      "altImg": "Essa é uma imagem de linha"
     }
   ]
 }

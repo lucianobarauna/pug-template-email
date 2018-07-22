@@ -3,9 +3,9 @@ html
   head
   body
     p.
-      texto qualquer aqui dasa dadas
+      texto qualquer aqui
     each prop, index in dataNews
-      if #{prop.tipoLayout} === "coluna"
+      if prop.tipoLayout === "coluna"
         p.
           isso é uma #{prop.tipoLayout}
         img(src=prop.srcImg, alt=prop.altImg)
