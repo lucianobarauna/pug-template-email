@@ -1,0 +1,22 @@
+mixin m-lyrow(linkProd, srcImg, altImg, spaceImg)
+  if spaceImg
+    // LINHA PRODUTRO HORIZONTAL
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
+      tr
+        td
+          a(href=linkProd, title='Clique e veja a promoção', target='_blank')
+            img(src=srcImg, alt=altImg, width='600', height='338', style='display:block; border:none; margin:0; padding:0;', border='0')
+    // LINHA ESPACO HORIZONTAL
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
+      tr
+        td
+          img(border='0', style='display:block; border:none; margin:0; padding:0;', src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp.jpg', alt='', width='600', height='19')
+    // / LINHA ESPACO HORIZONTAL
+  else
+    // LINHA PRODUTRO HORIZONTAL
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
+      tr
+        td
+          a(href=linkProd, title='Clique e veja a promoção', target='_blank')
+            img(src=srcImg, alt=altImg, width='600', height='338', style='display:block; border:none; margin:0; padding:0;', border='0')
+
