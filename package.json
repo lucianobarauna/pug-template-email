@@ -7,7 +7,7 @@
   },
   "scripts": {
     "gulp": "gulp",
-    "start": "yarn gulp task:server",
+    "start": "yarn gulp task:start",
     "build": "yarn gulp task:build"
   },
   "keywords": [
