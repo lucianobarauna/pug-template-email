@@ -53,7 +53,7 @@ gulp.task('task:server', () => {
           baseDir: "./"
       }
   });
-  gulp.watch(["src/pug/template/*.pug", "src/data/news.json"], ['task:pug']);
+  gulp.watch(["src/pug/**/*.pug", "src/data/news.json"], ['task:pug']);
   gulp.watch(["src/img/*.jpg", "email/*.html"], ['task:copyimg']);
   gulp.watch(["email/*.html"]).on("change", browserSync.reload);
 });
