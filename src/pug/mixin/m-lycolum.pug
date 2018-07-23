@@ -1,20 +1,20 @@
 mixin m-lycolum(listProd, spaceImg)
   if(spaceImg)
-    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#000000')
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#262626')
         tr
           each prop, index in listProd
             if (index === 0)
               td
                 a(href=prop.linkProd, title='Clique e veja a promoção', target='_blank')
-                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='339', style='display:block; border:none; margin:0; padding:0;', border='0')
+                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
               // ESPACO VERTICAL
               td
-                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='339', tyle='display:block; border:none; margin:0; padding:0;', border='0')
+                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
               // / ESPACO VERTICAL
             else
               td
                 a(href=prop.linkProd, title='Clique e veja a promoção', target='_blank')
-                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='339', style='display:block; border:none; margin:0; padding:0;', border='0')
+                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
     // LINHA ESPACO HORIZONTAL
     table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
       tr
@@ -22,21 +22,21 @@ mixin m-lycolum(listProd, spaceImg)
           img(border='0', style='display:block; border:none; margin:0; padding:0;', src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp.jpg', alt='', width='600', height='19')
     // LINHA ESPACO HORIZONTAL
   else
-    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#000000')
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#262626')
         tr
           each prop, index in listProd
             if (index === 0)
               td
                 a(href=prop.linkProd, title='Clique e veja a promoção', target='_blank')
-                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='339', style='display:block; border:none; margin:0; padding:0;', border='0')
+                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
               // ESPACO VERTICAL
               td
-                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='339', tyle='display:block; border:none; margin:0; padding:0;', border='0')
+                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
               // / ESPACO VERTICAL
             else
               td
                 a(href=prop.linkProd, title='Clique e veja a promoção', target='_blank')
-                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='339', style='display:block; border:none; margin:0; padding:0;', border='0')
+                  img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
 
 
 
