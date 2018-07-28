@@ -1,15 +1,11 @@
-const gulp = require('gulp')
-const pug = require('gulp-pug')
-const gulpData = require('gulp-data')
-const clean = require('gulp-clean')
-const plumber = require('gulp-plumber')
-const browserSync = require('browser-sync')
-const imagemin = require('gulp-imagemin')
-const fs = require('fs');
+
+const config = {
+  outName: "html-esppais-2018"
+}
 
 // Clear folder email
 gulp.task('task:clean', () => {
-  return gulp.src('email')
+  return gulp.src(config.outName)
   .pipe(clean())
 })
 
@@ -24,14 +20,14 @@ gulp.task('task:pug', () => {
         pretty: '\t',
         compileDebug: true
     }))
-    .pipe(gulp.dest('email/'))
+    .pipe(gulp.dest(config.outName))
     .pipe(browserSync.reload({stream: true}))
 })
 
 // Copy images to folder email
 gulp.task('task:copyimg', () => {
   return gulp.src('src/img/*.jpg')
-    .pipe(gulp.dest('email/'))
+    .pipe(gulp.dest(config.outName))
     .pipe(browserSync.reload({stream: true}))
 })
 
@@ -43,7 +39,7 @@ gulp.task('task:buildimg', () => {
         progressive: true,
         optimizationLevel: 5,
       }))
-      .pipe(gulp.dest('email/'))
+      .pipe(gulp.dest(config.outName))
   })
 
 // Static server
@@ -54,8 +50,8 @@ gulp.task('task:server', () => {
       }
   });
   gulp.watch(["src/pug/**/*.pug", "src/data/news.json"], ['task:pug']);
-  gulp.watch(["src/img/*.jpg", "email/*.html"], ['task:copyimg']);
-  gulp.watch(["email/*.html"]).on("change", browserSync.reload);
+  gulp.watch(["src/img/*.jpg", config.outName + "/*.html"], ['task:copyimg']);
+  gulp.watch(["config.outName*.html"]).on("change", browserSync.reload);
 });
 
 
@@ -69,5 +65,3 @@ gulp.task('task:start', ['task:clean'], () => {
 gulp.task("task:build", ['task:clean'], () => {
   gulp.start('task:pug', 'task:buildimg')
 })
-
-
