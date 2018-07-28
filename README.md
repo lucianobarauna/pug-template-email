@@ -1,7 +1,7 @@
 # pug-template-email
 Template de email generate with pug
 
-The idea is to have a jon and consummate to facilitate the maintenance of the code and development
+The idea is to have a json and consummate to facilitate the maintenance of the code and development
 
 ## Install
 Using npm
