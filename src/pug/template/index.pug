@@ -6,7 +6,7 @@ html
     // Head destaque
     include ../includes/head-news.pug
     each prop, index in dataNews
-      if prop.tipoLayout === "coluna"
+      if prop.typeLayout === "coluna"
         +m-lycolum(prop.columns, prop.spaceImg)
       else
         +m-lyrow(prop.linkProd, prop.srcImg, prop.altImg, prop.spaceImg)

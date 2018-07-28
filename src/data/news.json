@@ -1,7 +1,7 @@
 {
   "dataNews": [
     {
-      "tipoLayout": "coluna",
+      "typeLayout": "coluna",
       "columns": [
         {
           "linkProd": "link imagem 3",
@@ -17,7 +17,7 @@
       "spaceImg": true
     },
     {
-      "tipoLayout": "linha",
+      "typeLayout": "linha",
       "linkProd": "link imagem 2",
       "srcImg": "img-2.jpg",
       "altImg": "Imagem 2",
