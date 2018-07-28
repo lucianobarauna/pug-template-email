@@ -1,6 +1,14 @@
+const gulp = require('gulp')
+const pug = require('gulp-pug')
+const gulpData = require('gulp-data')
+const clean = require('gulp-clean')
+const plumber = require('gulp-plumber')
+const browserSync = require('browser-sync')
+const imagemin = require('gulp-imagemin')
+const fs = require('fs');
 
 const config = {
-  outName: "html-esppais-2018"
+  outName: "email"
 }
 
 // Clear folder email

@@ -1,6 +1,6 @@
 mixin m-lycolum(listProd, spaceImg)
   if(spaceImg)
-    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#262626')
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
         tr
           each prop, index in listProd
             if (index === 0)
@@ -9,7 +9,7 @@ mixin m-lycolum(listProd, spaceImg)
                   img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
               // ESPACO VERTICAL
               td
-                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
+                img(src='img-6.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
               // / ESPACO VERTICAL
             else
               td
@@ -19,10 +19,10 @@ mixin m-lycolum(listProd, spaceImg)
     table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
       tr
         td
-          img(border='0', style='display:block; border:none; margin:0; padding:0;', src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp.jpg', alt='', width='600', height='19')
+          img(border='0', style='display:block; border:none; margin:0; padding:0;', src='img-4.jpg', alt='', width='600', height='19')
     // LINHA ESPACO HORIZONTAL
   else
-    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0', bgcolor='#262626')
+    table(width='600', border='0', align='center', cellpadding='0', cellspacing='0')
         tr
           each prop, index in listProd
             if (index === 0)
@@ -31,7 +31,7 @@ mixin m-lycolum(listProd, spaceImg)
                   img(src=prop.srcImg, alt=prop.altImg, width='290', height='345', style='display:block; border:none; margin:0; padding:0;', border='0')
               // ESPACO VERTICAL
               td
-                img(src='http://www.lojadewhisky.com.br/lojas/00024143/images/esp_vt.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
+                img(src='img-6.jpg', width='19', height='345', tyle='display:block; border:none; margin:0; padding:0;', border='0')
               // / ESPACO VERTICAL
             else
               td

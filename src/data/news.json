@@ -4,87 +4,26 @@
       "tipoLayout": "coluna",
       "columns": [
         {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,5867240,whisky-single-malt-aberfeldy-12-anos",
-          "srcImg": "mesp_pais_p_01_2018.jpg",
-          "altImg": "Aberfeldy 12 anos"
+          "linkProd": "link imagem 3",
+          "srcImg": "img-3.jpg",
+          "altImg": "Imagem 3"
         },
         {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,5374289,whisky-single-malt-bruichladdich---port-charlotte",
-          "srcImg": "mesp_pais_p_02_2018.jpg",
-          "altImg": "Bruichladdich Port Charlotte"
+          "linkProd": "link imagem 3",
+          "srcImg": "img-3.jpg",
+          "altImg": "Imagem 3"
         }
       ],
       "spaceImg": true
     },
     {
       "tipoLayout": "linha",
-      "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,5867243,whisky-blended-dewar-s-25-anos",
-      "srcImg": "mesp_pais_d_01_2018.jpg",
-      "altImg": "Dewar's 25 Anos",
+      "linkProd": "link imagem 2",
+      "srcImg": "img-2.jpg",
+      "altImg": "Imagem 2",
       "spaceImg": true
-    },
-    {
-      "tipoLayout": "coluna",
-      "columns": [
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,5627161,whisky-blended-chivas-regal-extra",
-          "srcImg": "mesp_pais_p_03_2018.jpg",
-          "altImg": "Chivas Regal Extra"
-        },
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,6005967,whisky-bourbon---tennessee-jack-daniel-s-150-anos---anniversary-of-the-jack-daniel-distillery",
-          "srcImg": "mesp_pais_p_04_2018.jpg",
-          "altImg": "Jack Daniel's 150Th Anniversary"
-        }
-      ],
-      "spaceImg": true
-    },
-    {
-      "tipoLayout": "linha",
-      "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,4433489,whisky-single-malt-glenmorangie---quinta-ruban-12-anos",
-      "srcImg": "mesp_pais_d_02_2018.jpg",
-      "altImg": "Glenmorangie Quinta Ruban 12",
-      "spaceImg": true
-    },
-    {
-      "tipoLayout": "coluna",
-      "columns": [
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,5794331,whisky-bourbon---tennessee-jim-beam-black-extra-aged",
-          "srcImg": "mesp_pais_p_05_2018.jpg",
-          "altImg": "Jim Beam Black Extra Aged"
-        },
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,4865153,outros-destilados-cognac--armagnac---brandy-hennessy-exclusive-collection---hennessy-x-o--e-hennessy-paradis-extra--200ml-",
-          "srcImg": "mesp_pais_p_06_2018.jpg",
-          "altImg": "Hennessy Exclusive Collection"
-        }
-      ],
-      "spaceImg": true
-    },
-    {
-      "tipoLayout": "linha",
-      "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,3922412,whisky-bourbon---tennessee-maker-s-mark",
-      "srcImg": "mesp_pais_d_03_2018.jpg",
-      "altImg": "Makers Mark",
-      "spaceImg": true
-    },
-    {
-      "tipoLayout": "coluna",
-      "columns": [
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,4713894,outros-destilados-rum-rum-botucal-diplomatico-12-anos",
-          "srcImg": "mesp_pais_p_07_2018.jpg",
-          "altImg": "Rum Botucal Diplomático"
-        },
-        {
-          "linkProd": "https://www.lojadewhisky.com.br/prod,idloja,24143,idproduto,3879419,outros-destilados-tequila-tequila-herradura-a-ejo",
-          "srcImg": "mesp_pais_p_08_2018.jpg",
-          "altImg": "Tequila Herradura Anejo"
-        }
-      ],
-      "spaceImg": false
     }
+
   ]
 }
 
