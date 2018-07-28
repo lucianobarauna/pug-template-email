@@ -5,13 +5,17 @@
       "columns": [
         {
           "linkProd": "link imagem 3",
-          "srcImg": "img-3.jpg",
-          "altImg": "Imagem 3"
+          "image": {
+            "src": "img-3.jpg",
+            "alt": "Imagem 3"
+          }
         },
         {
           "linkProd": "link imagem 3",
-          "srcImg": "img-3.jpg",
-          "altImg": "Imagem 3"
+          "image": {
+            "src": "img-3.jpg",
+            "alt": "Imagem 3"
+          }
         }
       ],
       "spaceImg": true
@@ -19,9 +23,11 @@
     {
       "typeLayout": "linha",
       "linkProd": "link imagem 2",
-      "srcImg": "img-2.jpg",
-      "altImg": "Imagem 2",
-      "spaceImg": true
+      "image": {
+        "src": "img-2.jpg",
+        "alt": "Imagem 2",
+        "space": true
+      }
     }
 
   ]

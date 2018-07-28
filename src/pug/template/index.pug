@@ -9,7 +9,7 @@ html
       if prop.typeLayout === "coluna"
         +m-lycolum(prop.columns, prop.spaceImg)
       else
-        +m-lyrow(prop.linkProd, prop.srcImg, prop.altImg, prop.spaceImg)
+        +m-lyrow(prop.linkProd, prop.image.src, prop.image.alt, prop.image.space)
     // Footer
     include ../includes/footer.pug
 
