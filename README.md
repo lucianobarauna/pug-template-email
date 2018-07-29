@@ -17,9 +17,10 @@ stay in that location.
 The html lies with Pug includes for easy maintenance.
 
 **Obs: This project is only a basis for explaining logic. You are free to change it any way you like to fit your scope**
+The template configuration file is located in `src/data/news.json`. Below I describe the configuration of this file for civil construction
 
-## Json Properties.
-**Esse json é o padrão da explicação e pode ser alterado de acordo com seu escopo.**
+## Data news.json Properties.
+**This json is the standard of explanation and can be changed according to its scope.**
 
 | Props | Types | Description |
 | ------ | ------ | ------ |
